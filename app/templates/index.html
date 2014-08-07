@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+	<form action="" method="post" name="index">
+	{{form.hidden_tag()}}
+	<p>
+	Enter your roll number  <br>
+	{{form.gmail(size=50)}}
+	</p>
+	<p>
+	Enter your password (webmail login)<br>
+	{{form.password(size=50)}}
+	</p>
+	<p>
+	{{form.remember_me}}
+	Remember Me
+	</p>
+	<p>
+		<input type="submit" value="Log in "/>
+	</p>
+	</form>
+{% endblock %}	
+		
+
+	
